@@ -1,0 +1,6 @@
+{
+  "project": "line-clearance-release",
+  "changeover_states": ["prepared", "checking", "recleaning", "first_article", "released", "cancelled"],
+  "check_results": ["clear", "residue_found", "not_applicable", "invalidated"],
+  "token_states": ["issued", "consumed", "expired", "revoked"]
+}
