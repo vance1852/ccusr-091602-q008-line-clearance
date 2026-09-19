@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "line_id": "PKG-01",
+      "recipe_version": "R-PLAIN-7",
+      "product_id": "OAT-PLAIN",
+      "expected": {
+        "MOLD-VERIFY": {"mold_id": "MOLD-42"},
+        "PROGRAM-VERIFY": {"program": "PKT-3.2.1"}
+      }
+    },
+    {
+      "line_id": "PKG-01",
+      "recipe_version": "R-MILK-3",
+      "product_id": "MILK-PROTEIN",
+      "expected": {
+        "MOLD-VERIFY": {"mold_id": "MOLD-17"},
+        "PROGRAM-VERIFY": {"program": "PKT-3.1.0"}
+      }
+    },
+    {
+      "line_id": "PKG-01",
+      "recipe_version": "R-NUT-2",
+      "product_id": "NUT-ENERGY",
+      "expected": {
+        "MOLD-VERIFY": {"mold_id": "MOLD-23"},
+        "PROGRAM-VERIFY": {"program": "PKT-3.1.0"}
+      }
+    },
+    {
+      "line_id": "PKG-01",
+      "recipe_version": "R-FRUIT-5",
+      "product_id": "FRUIT-MIX",
+      "expected": {
+        "MOLD-VERIFY": {"mold_id": "MOLD-42"},
+        "PROGRAM-VERIFY": {"program": "PKT-3.2.1"}
+      }
+    }
+  ]
+}

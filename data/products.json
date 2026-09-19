@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "product_id": "MILK-PROTEIN",
+      "name": "乳清蛋白棒（含乳致敏原）",
+      "allergen": true
+    },
+    {
+      "product_id": "NUT-ENERGY",
+      "name": "坚果能量棒（含坚果致敏原）",
+      "allergen": true
+    },
+    {
+      "product_id": "OAT-PLAIN",
+      "name": "原味燕麦棒",
+      "allergen": false
+    },
+    {
+      "product_id": "FRUIT-MIX",
+      "name": "水果混合棒",
+      "allergen": false
+    }
+  ]
+}

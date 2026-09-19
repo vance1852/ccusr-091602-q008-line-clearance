@@ -1,0 +1,86 @@
+{
+  "line_id": "PKG-01",
+  "zones": [
+    {
+      "zone_id": "HOPPER",
+      "name": "料斗与下料通道",
+      "required_role": "operator",
+      "items": [
+        {
+          "item_id": "HOPPER-RESIDUE",
+          "name": "余料清空称重",
+          "evidence": "measurement",
+          "unit": "g",
+          "limit": 0.0
+        },
+        {
+          "item_id": "HOPPER-CLEAN-REC",
+          "name": "清洗记录扫码",
+          "evidence": "scan"
+        }
+      ]
+    },
+    {
+      "zone_id": "LABELER",
+      "name": "贴标工位",
+      "required_role": "operator",
+      "items": [
+        {
+          "item_id": "LABEL-OLD-CLEARED",
+          "name": "上一批标签清退",
+          "evidence": "scan",
+          "expected_batch": "previous"
+        },
+        {
+          "item_id": "LABEL-NEW-LOADED",
+          "name": "新批次标签装载",
+          "evidence": "scan",
+          "expected_batch": "current"
+        }
+      ]
+    },
+    {
+      "zone_id": "ROBOT-CELL",
+      "name": "机器人装盒单元",
+      "required_role": "technician",
+      "items": [
+        {
+          "item_id": "MOLD-VERIFY",
+          "name": "模具号机器回执校验",
+          "evidence": "machine"
+        },
+        {
+          "item_id": "PROGRAM-VERIFY",
+          "name": "程序版本机器回执校验",
+          "evidence": "machine"
+        }
+      ]
+    },
+    {
+      "zone_id": "CONVEYOR",
+      "name": "输送与缓存段",
+      "required_role": "operator",
+      "items": [
+        {
+          "item_id": "CONVEYOR-VISUAL",
+          "name": "目视无残留确认",
+          "evidence": "scan"
+        }
+      ]
+    },
+    {
+      "zone_id": "QA-LAB",
+      "name": "化验室取样点",
+      "required_role": "qa",
+      "items": [
+        {
+          "item_id": "SWAB-TEST",
+          "name": "致敏原拭子检测",
+          "evidence": "measurement",
+          "unit": "ppm",
+          "limit": 0.5
+        }
+      ]
+    }
+  ]
+}

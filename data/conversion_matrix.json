@@ -1,0 +1,65 @@
+{
+  "matrix_id": "PKG-CONVERSION",
+  "versions": [
+    {
+      "version": "1.0",
+      "effective_from": "2026-01-01T00:00:00",
+      "rules": [
+        {
+          "from_allergen": true,
+          "to_allergen": false,
+          "risk": "high",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL", "CONVEYOR"]
+        },
+        {
+          "from_allergen": true,
+          "to_allergen": true,
+          "risk": "medium",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL"]
+        },
+        {
+          "from_allergen": false,
+          "to_allergen": true,
+          "risk": "medium",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL"]
+        },
+        {
+          "from_allergen": false,
+          "to_allergen": false,
+          "risk": "low",
+          "zones": ["LABELER", "ROBOT-CELL"]
+        }
+      ]
+    },
+    {
+      "version": "2.0",
+      "effective_from": "2026-09-01T00:00:00",
+      "rules": [
+        {
+          "from_allergen": true,
+          "to_allergen": false,
+          "risk": "high",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL", "CONVEYOR", "QA-LAB"]
+        },
+        {
+          "from_allergen": true,
+          "to_allergen": true,
+          "risk": "high",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL", "CONVEYOR"]
+        },
+        {
+          "from_allergen": false,
+          "to_allergen": true,
+          "risk": "medium",
+          "zones": ["HOPPER", "LABELER", "ROBOT-CELL", "CONVEYOR"]
+        },
+        {
+          "from_allergen": false,
+          "to_allergen": false,
+          "risk": "low",
+          "zones": ["LABELER", "ROBOT-CELL"]
+        }
+      ]
+    }
+  ]
+}
