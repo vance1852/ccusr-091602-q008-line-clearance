@@ -1,0 +1,102 @@
+{
+  "current_version": "v2",
+  "versions": [
+    {
+      "version": "v1",
+      "issued_at": "2026-06-01",
+      "entries": [
+        {
+          "from": "P-ALLERGEN",
+          "to": "P-PLAIN",
+          "risk": "high",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-LABEL", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [
+              {"kind": "hopper_residue", "spec": {"limit": 2.0, "unit": "g"}},
+              {"kind": "cleaning_record"}
+            ]},
+            {"zone_id": "Z-FILL", "checks": [
+              {"kind": "cleaning_record"},
+              {"kind": "dosing_calibration", "spec": {"limit": 0.5, "unit": "g"}}
+            ]},
+            {"zone_id": "Z-CONV", "checks": [{"kind": "cleaning_record"}]}
+          ]
+        },
+        {
+          "from": "P-PLAIN",
+          "to": "P-ALLERGEN",
+          "risk": "medium",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-LABEL", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [
+              {"kind": "hopper_residue", "spec": {"limit": 2.0, "unit": "g"}},
+              {"kind": "cleaning_record"}
+            ]},
+            {"zone_id": "Z-FILL", "checks": [{"kind": "cleaning_record"}]}
+          ]
+        },
+        {
+          "from": "P-PLAIN",
+          "to": "P-PLAIN",
+          "risk": "low",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [{"kind": "cleaning_record"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "version": "v2",
+      "issued_at": "2026-09-01",
+      "entries": [
+        {
+          "from": "P-ALLERGEN",
+          "to": "P-PLAIN",
+          "risk": "high",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-LABEL", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [
+              {"kind": "hopper_residue", "spec": {"limit": 2.0, "unit": "g"}},
+              {"kind": "cleaning_record"}
+            ]},
+            {"zone_id": "Z-FILL", "checks": [
+              {"kind": "cleaning_record"},
+              {"kind": "dosing_calibration", "spec": {"limit": 0.5, "unit": "g"}}
+            ]},
+            {"zone_id": "Z-CONV", "checks": [
+              {"kind": "cleaning_record"},
+              {"kind": "swab_test", "spec": {"limit": 0.2, "unit": "ppm"}}
+            ]}
+          ]
+        },
+        {
+          "from": "P-PLAIN",
+          "to": "P-ALLERGEN",
+          "risk": "medium",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-LABEL", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [
+              {"kind": "hopper_residue", "spec": {"limit": 2.0, "unit": "g"}},
+              {"kind": "cleaning_record"}
+            ]},
+            {"zone_id": "Z-FILL", "checks": [{"kind": "cleaning_record"}]}
+          ]
+        },
+        {
+          "from": "P-PLAIN",
+          "to": "P-PLAIN",
+          "risk": "low",
+          "scope": [
+            {"zone_id": "Z-PRINT", "checks": [{"kind": "label_scan"}]},
+            {"zone_id": "Z-HOPPER", "checks": [{"kind": "cleaning_record"}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

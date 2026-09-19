@@ -1,0 +1,15 @@
+{
+  "people": [
+    {"user_id": "U-OP1", "name": "操作员甲", "posts": ["operator"]},
+    {"user_id": "U-OP2", "name": "操作员乙", "posts": ["operator"]},
+    {"user_id": "U-QA", "name": "质量员丙", "posts": ["quality"]},
+    {"user_id": "U-MECH", "name": "机修丁", "posts": ["mechanic"]},
+    {"user_id": "U-SUP", "name": "班组长戊", "posts": ["operator", "supervisor"]}
+  ],
+  "signature_policy": {
+    "zone_clearance": ["quality"],
+    "first_article": ["quality"],
+    "mold_program": ["mechanic"],
+    "reclean": ["operator", "quality"]
+  }
+}

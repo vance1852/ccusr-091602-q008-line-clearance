@@ -1,0 +1,35 @@
+{
+  "receipts": [
+    {
+      "receipt_id": "RC-9001",
+      "device_id": "ROBOT-01",
+      "device_seq": 41,
+      "line": "L1",
+      "kind": "mold_change",
+      "mold_id": "M-02",
+      "program_version": "v7",
+      "recipe_version": "R-200",
+      "emitted_at": "2026-09-19T08:05:00"
+    },
+    {
+      "receipt_id": "RC-9002",
+      "device_id": "ROBOT-01",
+      "device_seq": 42,
+      "line": "L1",
+      "kind": "mold_change",
+      "mold_id": "M-01",
+      "program_version": "v5",
+      "recipe_version": "R-100",
+      "emitted_at": "2026-09-19T07:58:00"
+    },
+    {
+      "receipt_id": "RC-9003",
+      "device_id": "TERM-07",
+      "device_seq": 12,
+      "line": "L1",
+      "kind": "cleaning_complete",
+      "zone_id": "Z-HOPPER",
+      "emitted_at": "2026-09-19T08:40:00"
+    }
+  ]
+}

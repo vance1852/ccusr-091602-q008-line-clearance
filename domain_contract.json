@@ -2,5 +2,9 @@
   "project": "line-clearance-release",
   "changeover_states": ["prepared", "checking", "recleaning", "first_article", "released", "cancelled"],
   "check_results": ["clear", "residue_found", "not_applicable", "invalidated"],
-  "token_states": ["issued", "consumed", "expired", "revoked"]
+  "token_states": ["issued", "consumed", "expired", "revoked"],
+  "risk_levels": ["low", "medium", "high"],
+  "check_kinds": ["label_scan", "hopper_residue", "cleaning_record", "swab_test", "dosing_calibration"],
+  "evidence_kinds": ["scan", "measurement", "exception"],
+  "signature_actions": ["zone_clearance", "first_article", "mold_program", "reclean"]
 }

@@ -1,0 +1,10 @@
+{
+  "lines": ["L1"],
+  "zones": [
+    {"zone_id": "Z-PRINT", "name": "贴标打印区", "line": "L1"},
+    {"zone_id": "Z-LABEL", "name": "标签暂存区", "line": "L1"},
+    {"zone_id": "Z-HOPPER", "name": "料斗区", "line": "L1"},
+    {"zone_id": "Z-FILL", "name": "灌装区", "line": "L1"},
+    {"zone_id": "Z-CONV", "name": "输送区", "line": "L1"}
+  ]
+}

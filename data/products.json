@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "product_id": "P-ALLERGEN",
+      "name": "花生酱夹心饼干",
+      "allergens": ["peanut"],
+      "mold_id": "M-01",
+      "program_version": "v5",
+      "recipe_version": "R-100",
+      "first_article_spec": {
+        "weight_g": [190, 210],
+        "seal_temp_c": [160, 180],
+        "code_grade": "A"
+      }
+    },
+    {
+      "product_id": "P-PLAIN",
+      "name": "原味苏打饼干",
+      "allergens": [],
+      "mold_id": "M-02",
+      "program_version": "v7",
+      "recipe_version": "R-200",
+      "first_article_spec": {
+        "weight_g": [95, 105],
+        "seal_temp_c": [150, 170],
+        "code_grade": "A"
+      }
+    }
+  ]
+}
